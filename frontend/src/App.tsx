@@ -1,7 +1,13 @@
+import { InstallPrompt } from './components/InstallPrompt';
 import { Welcome } from './pages/Welcome';
 
 function App() {
-  return <Welcome />;
+  return (
+    <>
+      <Welcome />
+      <InstallPrompt />
+    </>
+  );
 }
 
 export default App;
