@@ -1,0 +1,20 @@
+node_modules/
+dist/
+build/
+.env
+.env.local
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Prisma
+backend/prisma/migrations/dev.db
+
+# Lockfiles are generated per-environment for this sprint
+package-lock.json
