@@ -1,4 +1,8 @@
+import { useState } from 'react';
+
 export function Welcome() {
+  const [started, setStarted] = useState(false);
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-6 px-6 text-center">
       <div className="flex h-20 w-20 items-center justify-center rounded-full bg-petroleo shadow-card">
@@ -14,10 +18,17 @@ export function Welcome() {
 
       <button
         type="button"
+        onClick={() => setStarted(true)}
         className="rounded-full bg-petroleo px-8 py-3 text-sm font-semibold text-white shadow-card transition hover:opacity-90"
       >
         Comenzar
       </button>
+
+      {started && (
+        <p className="text-xs text-menta">
+          El registro y el matching llegan en el próximo sprint 🚀
+        </p>
+      )}
     </main>
   );
 }
